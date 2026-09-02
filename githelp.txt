@@ -8,3 +8,14 @@ git push -u origin main
 git add .
 git commit -m "#"
 git push
+
+git clone https://github.com/PanadaDeGato23/TrabajosDesarrolloWeb.git
+cd TrabajosDesarrolloWeb
+code .
+
+git config user.name
+git config user.email
+git config --global user.name "#"
+git config --global user.email "#"
+git config --global --unset user.name
+git config --global --unset user.email
