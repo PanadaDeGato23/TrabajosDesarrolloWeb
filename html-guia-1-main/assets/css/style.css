@@ -1,0 +1,28 @@
+.main {
+    width: 100%;
+    max-width: 64rem;
+    font-family: Arial, sans-serif;
+}
+.main p {
+    font-size: 120%;
+}
+.main h1 {
+    font-size: 180%;
+}
+.main ul {
+    font-size: 110%;
+}
+.gato {
+    margin-left: 70px;
+    width: 275px;
+    height: 250px;
+    border: 5px solid;
+    transition: 0.3s ease;
+}
+.gato:hover{
+    transform: scale(1.1);
+}
+.link {
+    font-size: 90%;
+    color: blue;
+}
