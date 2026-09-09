@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: radial-gradient(
+        rgb(219, 12, 64),
+        rgb(197, 24, 96),
+        rgb(182, 33, 125)
+    );
+    width: 50%;
+    display: inline;
+}
+
+header {
+    background: linear-gradient(
+        0deg,
+        rgb(137, 18, 153),
+        rgb(143, 15, 100)
+    );
+    padding: 1rem;
+    border-bottom: 5px solid rgb(172, 41, 102);
+}
+
+header h1 {
+    background: linear-gradient(
+        90deg,
+        rgb(233, 128, 8),
+        rgb(223, 209, 13),
+        rgb(166, 255, 0),
+        rgb(223, 209, 13),
+        rgb(233, 128, 8)
+    );
+    background-size: 300% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    animation: gradientFlow 10s linear infinite;
+    font-size: 300%;
+}
+
+nav ul {
+    display: inline;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 250%;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.tarjeta2 img {
+    width: auto;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 3px solid #ccc;
+    transition: 0.2s ;
+}
+
+.tarjeta2 img:hover {
+    transform: scale(1.05);
+}
+
+#mensaje-estado {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 300% 50%;
+    }
+}
