@@ -13,6 +13,12 @@ git clone https://github.com/PanadaDeGato23/TrabajosDesarrolloWeb.git
 cd TrabajosDesarrolloWeb
 code .
 
+git clone https://github.com/PanadaDeGato23/TrabajosDesarrolloWeb.git C:\Users\Benja\Downloads\TrabajosDesarrolloWeb
+cd C:\Users\Benja\Downloads\TrabajosDesarrolloWeb
+code .
+
+code C:\Users\Benja\Downloads\TrabajosDesarrolloWeb
+
 git config user.name
 git config user.email
 git config --global user.name "#"

@@ -1,0 +1,2 @@
+Galeria de cosas de mi, mis gatas, proyectos??
+que al presionar las imagenes muestre info sobre eso, modificando el html (dom)
