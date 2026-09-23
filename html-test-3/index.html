@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="datos"> </ul>
+        <script>
+            const datos = [1200, 350, 1500, 1400, 250, 5000, 1950, 1952]
+            const d = document.querySelector("#datos")
+            for (let valor of datos){
+                const item = document.createElement("li")
+                item.textContent = valor
+                if (valor > 1000 && valor < 2000){
+                    item.style.color = `green`;
+                } else {
+                    item.style.color = `red`;
+                }
+                d.appendChild(item)
+            }
+        </script>
+</body>
+</html>
