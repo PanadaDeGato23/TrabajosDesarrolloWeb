@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de productos</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+  <header class="encabezado">
+    <h1>Catálogo de productos</h1>
+    <p>Ejemplo de consulta de datos desde una base de datos PostgreSQL.</p>
+  </header>
+
+  <main class="contenedor">
+    <section class="filtros" aria-label="Filtros de productos">
+      <label for="buscarNombre">Buscar por nombre
+        <input type="search" id="buscarNombre" placeholder="Ej.: café">
+      </label>
+      <label for="filtroCategoria">Filtrar por categoría
+        <select id="filtroCategoria">
+          <option value="">Todas las categorías</option>
+        </select>
+      </label>
+      <button type="button" id="limpiarFiltros">Limpiar filtros</button>
+    </section>
+
+    <p id="mensaje" role="status">Cargando productos...</p>
+    <div class="tabla-contenedor">
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Descripción</th>
+            <th>Categoría</th>
+            <th>Precio</th>
+          </tr>
+        </thead>
+        <tbody id="tablaProductos"></tbody>
+      </table>
+    </div>
+  </main>
+  <footer><p>Proyecto de ejemplo para practicar fetch(), DOM y filtros.</p></footer>
+</body>
+</html>
